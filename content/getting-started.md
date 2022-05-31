@@ -6,7 +6,9 @@ This guide covers getting started with Tier so that you can
 quickly monetize your SaaS product without regretting it later.
 
 For a deeper dive into the concepts Tier uses, see [Tier Basic
-Concepts](../basics).
+Concepts](basics).
+
+## Table of Contents
 
 ## Sign Up for Tier
 
@@ -28,11 +30,11 @@ until you've connected Stripe.
 ## Install a Tier SDK
 
 The easiest way to interact with Tier is by using one of our
-supported SDKs.  However, the [API](../api) is also fairly small
+supported SDKs.  However, the [API](api) is also fairly small
 by design, and it's perfectly acceptable to interface with it
 that way as well.
 
-[SDKs](../sdk) are provided for the following languages.  If your
+[SDKs](sdk) are provided for the following languages.  If your
 preferred language isn't shown here, let us know!
 
 * [Node.js](https://github.com/tierdev/node-sdk)
@@ -51,7 +53,7 @@ configuration files, and so on.
 
 ## Define and Push a Pricing Model
 
-The [pricing model](../basics#model) is a JSON representation of
+The [pricing model](basics#model) is a JSON representation of
 the plans, features, and tiers that define how users are charged
 for your product.
 

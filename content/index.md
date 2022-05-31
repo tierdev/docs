@@ -11,7 +11,7 @@ feature usage logic, so your _code_ doesn't have to change when
 your pricing does.  A single source of truth about your pricing
 model means that everything is kept in sync.
 
-* [Getting Started](./getting-started)
-* [Basic Concepts](./basics)
-* [API](./api)
-* [SDK](./sdk)
+* [Getting Started](getting-started)
+* [Basic Concepts](basics)
+* [API](api)
+* [SDK](sdk)
