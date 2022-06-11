@@ -123,3 +123,99 @@ Tier.paymentForm(<%- JSON.stringify(stripeOptions) %>, {
 })
 </script>
 ```
+
+Or, as a React component:
+
+```js
+// react example
+import { useEffect } from 'react'
+export default function PaymentMethodForm({ stripeOptions }) {
+  useEffect(() => {
+    const elements = {
+      form: '#payment-form',
+      payment: '#payment-element',
+      error: '#payment-error',
+    }
+    const load = () => Tier.paymentForm(stripeOptions, elements)
+    if (window.Tier) load()
+    else window.addEventListener('DOMContentLoaded', load)
+  }, [stripeOptions])
+
+  return (
+    <>
+      <form id="payment-form">
+        <div id="payment-element"></div>
+        <input type="submit" value="Submit" className={className} />
+        <div id="payment-error"></div>
+      </form>
+    </>
+  )
+}
+```
+
+## Attaching Payment Info to Customer
+
+When the user submits the Payment Method form, their information
+will be sent to Stripe, and they'll be directed back to this
+page, but with a special `?setup_intent=...` on the query string.
+
+To be able to actually bill the customer, we'll have to attach
+this payment method to their account.
+
+In some cases, additional verification may be required, which is
+why this extra step exists.
+
+Do this by using the `tier.stripeSetup(org, setupIntent)` method.
+
+```js
+import { isTierError, TierClient } from '@tier.run/sdk'
+const tier = TierClient.fromEnv()
+
+// account settings page
+app.get('/account', async (req, res) => {
+  const org = await lookupCurrentLoggedInUserSomehow(req)
+
+  // Many frameworks present an easier way to get at
+  // query string parameters, of course. However you
+  // normally do it is fine.
+  const u = new URL(req.url, 'http://x')
+  if (u.searchParams.has('setup_intent')) {
+    // returning from Stripe payment method setup.
+    try {
+      await tier.stripeSetup(`org:${org}`, u.searchParams.get('setup_intent'))
+      // payment method is now attached!
+    } catch (er) {
+      if (isTierError(er)) {
+        // something bad happened!
+        // handle this like any other server error,
+        // log it, show error page, etc.
+        return serve5xxStatusPage(res, er)
+      } else if (er.next_action?.redirect_to_url?.url) {
+        // Redirect the user to go authorize their payment
+        return redirect(res, er.redirect_to_url.url, 303)
+      } else if (er.status === 'processing') {
+        // all we can do is wait
+        return showAccountSetupPage(res, {
+          message: 'Still processing your payment method',
+        })
+      } else {
+        // some other error
+        // See https://stripe.com/docs/api/setup_intents/object
+        // for descriptions of the values set on er.status and
+        // er.last_setup_error to decide how best to tell the
+        // user what to do.
+        return showAccountSetupPage(res, {
+          message: constructPaymentMethodSetupErrorMessage(er),
+        })
+      }
+    }
+  }
+
+  const stripeOptions = await tier.stripeOptions(`org:${org}`)
+  showAccountSetupPage(res)
+})
+```
+
+Once the payment method is attached to the customer successfully,
+any usage that is reported to Tier will automatically be invoiced
+using the payment method that they have entered.
