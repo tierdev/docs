@@ -113,6 +113,11 @@ occurs.
 Phases may be appended at any time in the future, in the past, or
 at the current time. For example, you might
 
+An org _must_ be given a plan before you can track usage for it.
+Until then, any reservation you try to make for that org will
+fail.  (They haven't signed up for your service, so they can't
+use any paid features!)
+
 ## Model
 
 The "model" is a JSON representation of the plans you define for
@@ -162,7 +167,28 @@ access to that feature.
 
 ### Pushing a Model
 
-TKTK
+Create your model in any filename that you prefer.  We typically
+use `pricing.json`.
+
+Push the pricing model from the command line by installing one of
+the [Tier SDKs](getting-started#install-a-tier-sdk) and then
+running:
+
+```bash
+tier push pricing.json
+```
+
+In the background, this is just making a request to the Tier API.
+You can also send it programmatically by using the
+`tier.pushModel(<filename>)` function in the SDK, or by making an
+http request using your tool of choice:
+
+```bash
+curl -X POST \
+  -u $TIER_KEY \
+  -H "Content-Type: application/json" \
+  -d $(cat pricing.json)
+```
 
 ## Checking and Tracking Usage
 
