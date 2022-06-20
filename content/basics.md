@@ -4,7 +4,7 @@ title: Tier Basic Concepts
 
 This guide covers the basic concepts that Tier uses.  If you're
 just getting started with Tier, and want to skip all this, check
-out the [Getting Started with Tier](getting-started) guide as
+out the [Getting Started with Tier](./getting-started.md) guide as
 well.
 
 ## Table of Contents
