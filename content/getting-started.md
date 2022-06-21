@@ -30,15 +30,15 @@ until you've connected Stripe.
 ## Install a Tier SDK
 
 The easiest way to interact with Tier is by using one of our
-supported SDKs.  However, the [API](api) is also fairly small
+supported SDKs.  However, the API is also fairly small
 by design, and it's perfectly acceptable to interface with it
-that way as well.
+directly.
 
-[SDKs](sdk) are provided for the following languages.  If your
+SDKs are provided for the following languages.  If your
 preferred language isn't shown here, let us know!
 
-* [Node.js](https://github.com/tierdev/node-sdk)
-* [Go](https://github.com/tierdev/go-sdk) <!-- TKTK -->
+* [Node.js](./node-sdk.md)
+<!-- TKTK * [Go](https://github.com/tierdev/go-sdk) -->
 
 ## Log into Tier
 
