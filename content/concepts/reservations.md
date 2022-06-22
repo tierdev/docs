@@ -1,5 +1,6 @@
 ---
 title: Reservations
+order: 4
 ---
 
 <!-- include _pieces/reservation-intro -->

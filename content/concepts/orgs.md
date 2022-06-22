@@ -1,5 +1,6 @@
 ---
 title: Orgs
+order: 3
 ---
 
 <!-- include _pieces/org-intro -->

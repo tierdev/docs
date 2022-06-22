@@ -1,5 +1,6 @@
 ---
 title: Node SDK
+order: 100
 ---
 
 The Tier Node SDK can be found [on

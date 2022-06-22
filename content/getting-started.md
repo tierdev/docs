@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Tier
+order: 0
 ---
 
 This guide covers getting started with Tier so that you can

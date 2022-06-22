@@ -1,5 +1,6 @@
 ---
 title: Model
+order: 1
 ---
 
 <!-- include _pieces/model-intro -->

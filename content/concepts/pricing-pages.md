@@ -1,5 +1,6 @@
 ---
 title: Pricing Pages
+order: 2
 ---
 
 _Note: this feature is experimental, and under active

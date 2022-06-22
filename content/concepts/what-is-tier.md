@@ -1,5 +1,6 @@
 ---
 title: What Is Tier
+order: 0
 ---
 
 Tier is a tool to help you get started charging for your

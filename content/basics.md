@@ -1,5 +1,6 @@
 ---
 title: Tier Basic Concepts
+order: 1
 ---
 
 This guide covers the basic concepts that Tier uses.  If you're
