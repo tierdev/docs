@@ -14,7 +14,7 @@ well.
 
 <!-- include _pieces/org-intro -->
 
-[Read more about orgs](/content/concepts/3-orgs.md)
+[Read more about orgs](/content/concepts/orgs.md)
 
 ## Features
 
@@ -48,7 +48,7 @@ use any paid features!)
 
 <!--include _pieces/model-intro -->
 
-[Read more about Pricing Models](/content/concepts/1-model.md)
+[Read more about Pricing Models](/content/concepts/model.md)
 
 ### Pushing a Model
 
@@ -58,4 +58,4 @@ use any paid features!)
 
 <!-- include _pieces/reservation-intro -->
 
-[Read more about Reservations](/content/concepts/4-reservation.md)
+[Read more about Reservations](/content/concepts/reservation.md)

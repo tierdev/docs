@@ -9,7 +9,7 @@ feedback](/slack) about what works for you, what you'd like to
 see, etc._
 
 As you define plans in your [pricing
-model](/content/concepts/1-model.md), of course it does not make
+model](/content/concepts/model.md), of course it does not make
 things much easier unless the users in your application can be
 signed up for the latest and greatest versions of each plan.
 
@@ -23,7 +23,7 @@ This is where [Pricing Pages](/pricing-page) come in.
 ## Pricing Page Data Model
 
 The Pricing Page is a subset of the plans defined in your
-[model](/content/conepts/1-model.md).
+[model](/content/concepts/model.md).
 
 Each pricing page data object contains the following fields:
 

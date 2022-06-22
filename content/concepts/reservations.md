@@ -32,7 +32,7 @@ reservation.
 ## Timing
 
 Reservations are counted against the phase in the [org
-schedule](/content/concepts/3-orgs.md) corresponding to their
+schedule](/content/concepts/orgs.md) corresponding to their
 effective date.
 
 This "tallying up" of usage occurs at the _end_ of the billing

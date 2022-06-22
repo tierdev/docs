@@ -61,7 +61,7 @@ application to record usage for this org.
 
 The `plan` parameter needs to be a valid plan identifier with
 both name and version, as defined in your [pricing
-model](/content/concepts/1-model.md).
+model](/content/concepts/model.md).
 
 You will typically want to create an initial "free" or "start"
 plan on user sign-up just to record that the org exists.  When
