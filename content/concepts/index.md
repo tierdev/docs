@@ -1,5 +1,6 @@
 ---
 title: Deep Dive
+order: 5
 ---
 
 This section covers the architecture of the Tier system in
