@@ -38,7 +38,7 @@ get invoices flowing so you collect money.)
 
 ## Push a Pricing Model
 
-Create a [`pricing.json`](/content/basics.md#model) file that
+Create a [`pricing.json`](/docs/basics.md#model) file that
 reflects your plans, features, and prices.  Read the [Tier Basic
 Concepts](/content/basics.md) guide to learn what needs to go in
 this file.
@@ -80,7 +80,7 @@ const tier = TierClient.fromEnv()
 
 This method _appends_ a new _phase_ to the org's schedule.
 
-An [Org](/content/basics.md#orgs) represents a single customer or
+An [Org](/docs/basics.md#orgs) represents a single customer or
 billing entity within your application.
 
 ```js
