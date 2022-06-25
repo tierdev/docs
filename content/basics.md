@@ -8,8 +8,6 @@ just getting started with Tier, and want to skip all this, check
 out the [Getting Started with Tier](./getting-started.md) guide as
 well.
 
-## Table of Contents
-
 ## Orgs
 
 <!-- include _pieces/org-intro -->
