@@ -196,5 +196,3 @@ touch](https://join.slack.com/t/tier-uo72534/shared_invite/zt-1b7iqereo-G2GAIenF
 and let us know where you're getting stuck.
 
 Or if you're not getting stuck, then just come brag about it.
-
-You can also learn more by checking out [the docs](/docs).
