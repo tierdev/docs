@@ -38,7 +38,7 @@ A user will be invoiced based on the phase in which their usage
 occurs.
 
 An org _must_ be given a plan before you can track usage for it.
-Until then, any reservation you try to make for that org will
+Until then, any feature check you try to make for that org will
 fail.  (They haven't signed up for your service, so they can't
 use any paid features!)
 
@@ -52,8 +52,8 @@ use any paid features!)
 
 <!-- include _pieces/pushing-a-model -->
 
-## Reservations
+## Tracking and Recording Usage
 
-<!-- include _pieces/reservation-intro -->
+<!-- include _pieces/usage-intro -->
 
-[Read more about Reservations](/content/concepts/reservation.md)
+[Read more about Usage](/content/concepts/usage.md)

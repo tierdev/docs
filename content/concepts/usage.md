@@ -8,20 +8,20 @@ order: 4
 ## Counters
 
 Tier of course has no idea what your actual features are,
-_really_.  You could be shipping stamps, serving files, washing
+_really_. You could be shipping stamps, serving files, washing
 cars, anything.
 
 Tier is, at its core, a series of timers and counters that your
 app uses to track the usage of whatever it is your app does.
 
 Internally, there is a _positive_ counter, and a _negative_
-counter, so that Tier can track each reservation _and each
-refund_ over time.
+counter, so that Tier can track each usage increase _and
+decrease_ over time.
 
 ## Overages
 
-When a reservation puts an org's usage of a feature beyond the
-last tier in their plan, they go into an "overage" state.
+When usage puts an org beyond the last tier in their plan for
+that feature, they go into an "overage" state.
 
 Overages are not billed, but they _are_ recorded.
 
@@ -35,9 +35,9 @@ schedule](/content/concepts/orgs.md) corresponding to their
 effective date.
 
 This "tallying up" of usage occurs at the _end_ of the billing
-phase.  Note that `record()` and `appendPhase()` both take a
-Date argument indicating when they are effective.  (In both
-cases, the effective date defaults to "right now".)
+phase. Note that `record()` and `appendPhase()` both take a Date
+argument indicating when they are effective. (In both cases, the
+effective date defaults to "right now".)
 
 ## More Usage Examples
 
