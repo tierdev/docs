@@ -1,0 +1,34 @@
+{
+  "name": "@tier.run/docs",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "test": "tap"
+  },
+  "devDependencies": {
+    "@types/tap": "^15.0.7",
+    "prettier": "^2.7.1",
+    "tap": "^16.3.0",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  },
+  "tap": {
+    "coverage": false,
+    "node-arg": [
+      "--loader",
+      "ts-node/esm"
+    ],
+    "ts": false
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "bracketSameLine": true,
+    "arrowParens": "avoid",
+    "endOfLine": "lf"
+  }
+}
