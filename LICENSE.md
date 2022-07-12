@@ -1,2 +1,2 @@
-Copyright (c) Tier.run
+Copyright (c) 2022 Tier.run
 All rights reserved
