@@ -30,5 +30,6 @@
     "bracketSameLine": true,
     "arrowParens": "avoid",
     "endOfLine": "lf"
-  }
+  },
+  "repository": "https://github.com/tierdev/docs"
 }
