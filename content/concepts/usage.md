@@ -1,5 +1,5 @@
 ---
-title: Recording Usage
+title: Reporting Usage
 order: 4
 ---
 
@@ -23,9 +23,9 @@ decrease_ over time.
 When usage puts an org beyond the last tier in their plan for
 that feature, they go into an "overage" state.
 
-Overages are not billed, but they _are_ recorded.
+Overages are not billed, but they _are_ reported.
 
-If a feature isn't delivered, you can `tier.record()` with a
+If a feature isn't delivered, you can `tier.report()` with a
 negative number to roll it back.
 
 ## Timing
@@ -35,7 +35,7 @@ schedule](/content/concepts/orgs.md) corresponding to their
 effective date.
 
 This "tallying up" of usage occurs at the _end_ of the billing
-phase. Note that `record()` and `appendPhase()` both take a Date
+phase. Note that `report()` and `appendPhase()` both take a Date
 argument indicating when they are effective. (In both cases, the
 effective date defaults to "right now".)
 

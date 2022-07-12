@@ -57,7 +57,7 @@ To make the new phase effective immediately, simply omit the
 
 The `org` parameter needs to be a valid org name (ie, a string
 starting with `"org:"`) which you will use throughout the
-application to record usage for this org.
+application to report usage for this org.
 
 The `plan` parameter needs to be a valid plan identifier with
 both name and version, as defined in your [pricing

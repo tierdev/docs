@@ -116,12 +116,12 @@ upgrading/downgrading, etc.
 
 When checking whether a user is allowed to consume some feature,
 use the `tierClient.can()` method.  When the feature is consumed,
-call `tierClient.record()` to add it to their bill.
+call `tierClient.report()` to add it to their bill.
 
 ```js
 if (await tier.can('org:acme', 'feature:foo')) {
   consumeOneFoo('acme')
-  await tier.record('org:acme', 'feature:foo')
+  await tier.report('org:acme', 'feature:foo')
 } else {
   // suggest they buy a bigger plan, maybe?
   showUpgradePlanUX('acme')
