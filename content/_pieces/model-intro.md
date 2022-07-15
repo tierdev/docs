@@ -25,7 +25,7 @@ access to that feature.
             // first 200 cost $0.50 each, but $10 up front
             { "price": 50, "upto": 200, "base": 1000 },
             // streams 201-1000 cost $0.10 each
-            { "price": 10, "upto": 1000 }
+            { "price": 10, "upto": 1000 },
             // then they're free
             {},
           ]
