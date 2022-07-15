@@ -71,8 +71,10 @@ model, of course, or you can use this very simple example:
 {
   "plans": {
     "plan:welcome@0": {
-      "feature:test": {
-        "tiers": [{}]
+      "features": {
+        "feature:test": {
+          "tiers": [{}]
+        }
       }
     }
   }
