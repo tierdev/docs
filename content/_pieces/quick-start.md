@@ -169,7 +169,7 @@ And pass that to the front-end to load the payment entry form:
     payment: '#payment-element',
     error: '#payment-error',
   })
-	"tier.run/client/tier/apitype"
+</script>
 ```
 
 ### Attaching Payment Method to Customer
